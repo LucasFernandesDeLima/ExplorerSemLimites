@@ -1,0 +1,280 @@
+:root {
+  --bg-color-home-of-contact: #f9f4fb;
+  --color-white: #ffffff;
+  --bg-color-cads: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+
+  --ff-mulish: 'Mulish', sans-serif;
+
+  --fc-body: #312d64;
+  --fc-titles: #b52184;
+
+  --fs-body: 1.6rem;
+  --fs-main-title: 3.2rem;
+  --fs-form-legend: 3.2rem;
+  --fs-main-title-p: 2rem;
+  --fs-title-card: 3.2rem;
+
+  font-size: 62.5%;
+}
+
+.wrapper {
+  padding: 0 3.2rem;
+}
+
+.title {
+  line-height: 4rem;
+  font-weight: 900;
+  color: var(--fc-titles);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: var(--ff-mulish);
+  font-size: var(--fs-body);
+  color: var(--fc-body);
+}
+
+.page {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+#home {
+  background-color: var(--bg-color-home-of-contact);
+  padding-bottom: 10rem;
+}
+
+#home .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#home .image img {
+  display: block;
+  width: 100%;
+}
+
+#home hgroup {
+  text-align: center;
+  margin: 1.7rem 0 3.5rem;
+}
+
+h1 {
+  font-size: var(--fs-main-title);
+}
+
+#home hgroup p {
+  font-weight: 600;
+  font-size: var(--fs-main-title-p);
+  line-height: 2.5rem;
+}
+
+#home button {
+  display: block;
+  margin: auto;
+
+  border: 0;
+  background-color: transparent;
+}
+
+#home .button {
+  display: inline-block;
+  border: 4px solid var(--fc-titles);
+  border-radius: 760.109px;
+  padding: 3rem 1.5rem;
+}
+
+/*####################### CARDS #######*/
+#cards {
+  background: var(--bg-color-cads);
+}
+
+#cards .wrapper {
+  padding: 5rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#cards .card {
+  padding: 2.6rem 6rem 2.6rem 2.6rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+#cards img {
+  display: block;
+}
+
+#cards .title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  font-size: var(--fs-title-card);
+}
+
+.card p {
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+#form-contact {
+  padding: 8rem 0 6.5rem 0;
+}
+
+#form-contact fieldset {
+  border: 0;
+  background-color: transparent;
+}
+
+#form-contact legend {
+  font-size: var(--fs-form-legend);
+  margin-bottom: 4rem;
+}
+
+.inpt-wrapper {
+  position: relative;
+}
+
+.inpt-wrapper + .inpt-wrapper {
+  margin-top: 3.2rem;
+}
+
+.inpt-wrapper label {
+  font-weight: 600;
+  opacity: 0;
+  position: absolute;
+}
+
+.inpt-wrapper input {
+  border-radius: 16px;
+  height: 5.6rem;
+  padding: 0px 20px 0 50px;
+  width: 100%;
+}
+
+.inpt-wrapper img {
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 11px);
+}
+
+.inpt-wrapper textarea {
+  resize: none;
+  width: 100%;
+  height: 14rem;
+
+  padding: 2rem 1rem;
+  border-radius: 16px;
+}
+
+#form-contact .button {
+  border: 0;
+  padding: 1rem 1.6rem;
+  margin-top: 3.2rem;
+  background: var(--bg-color-cads);
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-white);
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-white);
+  background: var(--bg-color-cads);
+  padding-block: 3.2rem;
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --fs-main-title: 6rem;
+    --fs-form-legend: 4.2rem;
+    --fs-main-title-p: 3.2rem;
+  }
+
+  .wrapper {
+    padding: 0 11rem;
+  }
+
+  .page {
+    max-width: 1440px;
+  }
+
+  #home .wrapper {
+    flex-direction: row-reverse;
+    padding: 0 2rem 0 11rem;
+  }
+
+  #home .wrapper .image,
+  #home .wrapper .wrapper-main-title {
+    flex: 1;
+  }
+
+  #home .image img {
+    display: block;
+    width: 72rem;
+  }
+
+  #home hgroup {
+    margin-top: 30rem;
+    margin-bottom: 18rem;
+    text-align: left;
+  }
+
+  h1 {
+    line-height: 4rem;
+  }
+
+  #home .wrapper-main-title p {
+    line-height: 7.3rem;
+  }
+
+  #home button {
+    margin: 0;
+  }
+
+  #cards .wrapper {
+    flex-direction: row;
+    padding-inline: 11rem;
+  }
+
+  #cards .card {
+    padding: 3.2rem 1.2rem 4.8rem 3.2rem;
+  }
+
+  #cards .title {
+    margin-top: 4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .card p {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  #form-contact {
+    background-image: url('../assets/img-bg-contact.svg');
+    background-repeat: no-repeat;
+    background-size: 65.2srem;
+    background-position: top 0 right 0;
+  }
+
+  .fieldset-and-button {
+    width: 55rem;
+  }
+}
